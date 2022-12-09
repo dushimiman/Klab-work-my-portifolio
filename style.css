@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background-color: rgb(34, 32, 32);  
+background-size: cover;
+position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 150px;
+  clip-path: circle();
+}
+ .nav-links{
+  flex: 1;
+  text-align: right;
+ }
+ .nav-links ul li{
+  list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative ;
+ }
+ .nav-links ul li a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 17px;
+ }
+ .nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #10654E;
+  display: block;   
+  margin: auto;
+  transition: 0,5s;
+
+ }
+ .nav-links ul li:hover::after{
+  width: 100%;
+ }
+ .text-box{
+  width: 90%;
+  color:#ffff;
+  display: flex;
+  
+
+  
+ }
+
+ .text-box p{
+  padding: 4rem;
+  font-size: 20px;
+ }
+ .home-img{
+  background-color: black;
+  width: 50%;
+  height: 50vh;
+  clip-path: circle();
+
+ }
+
+ .fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  clip-path: circle();
+  margin-left: 3rem;
+   
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background-color: #1e335f;
+  color: white;
+}
+.fa-linkedin{
+  background: #346eeb;
+  color: white;
+}
+.fa-telegram{
+  background: #346eeb;
+  color: white;
+}
+.here-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #ffff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: #10654E;
+  position: relative;
+  cursor: pointer;
+}
+.here-btn:hover{
+  border: 1px #f44336;
+  background: #f44336  ;
+transition: 1s;
+}
+.here-btn{
+  margin-left: 5rem;
+}
+.container{
+max-width: 100%;
+background: rgb(22, 21, 21);
+height: 100vh;
+display: flex;
+}
+.about-img{
+ 
+  height: 70vh;
+  width: 30%;
+}
+.about-me{
+
+  height: 100vh;
+  width: 70%;
+}
+.about-me h1{
+  padding: 3rem;
+  color: cornsilk;
+}
+.about-me p{
+  color: cornsilk;
+  padding: 2rem;
+  font-size: 20px;
+}
+.about-me button{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #ffff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: #10654E;
+  position: relative;
+  cursor: pointer;
+}
+.about-me button:hover{
+  border: 1px #f44336;
+  background: #f44336  ;
+transition: 1s;
+}
+.about-img img{
+  width: 25rem;
+}
+ .skills{
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding-left: 3rem;
+}
+.skills .skill-item{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+.skills .skill-item h5{
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: cornsilk;
+  text-transform: capitalize;
+}
+.skills .skill-item .progress{
+  background: rgb(218, 224, 218);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.skills .skill-item .progress .progress-in{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #10654E;
+}
+.skills .skill-item .skill-percent{
+  position: absolute;
+  right: 0;
+  color: cornsilk;
+  /* top: -40px; */
+  font-weight: 400;
+  line-height: 40px;
+}
+.service-container{
+  padding-top: 60px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    max-width: 1100px;
+    width: 100%;
+    
+}
+.service-item{
+  margin-bottom: 30px;
+  flex: 33.33%;
+  max-width: 33.3%;
+}
+.service-item .service-item-inner{
+  background-color: rgb(221, 185, 185);
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  transform: all 0.3s ease;
+}
+.service-item .service-item-inner:hover{
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service-item .service-item-inner .icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+
+  margin: 0 auto 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.service-item .service-item-inner .icon .fa{
+  font-size: 40px;
+line-height: 60px;
+color: red;
+transition: all 0.3s ease;
+}
+.service-item .service-item-inner:hover .icon{
+  background: green;
+}
+.service-item .service-item-inner:hover .icon .fa{
+  font-size: 25px;
+  color: #ffff;
+}
+.service-item .service-item-inner h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #10654E;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.service-item .service-item-inner p{
+  font-size: 16px;
+  color: cornsilk;
+  line-height: 25px;
+}
