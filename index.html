@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 6px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
         
-    </style>
+        input[type=submit] {
+          background-color: #10654E;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 40px;
+        }
+        </style>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -244,6 +272,66 @@
     </section>
     <section class="conctact-section">
         
+        <div class="contact-container">
+            <h2 style="color: cornsilk; padding-left:  2rem;">Contact Me</h2>
+            <h3 style="color: cornsilk;" class="contact-title padd-15">Have you any Question ?</h3>
+            <h4 style="color: cornsilk;" class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+            <div class="row">
+                <div class="contact-info-item padd-15">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                        <h4>Call Us on</h4>
+                        <p>+250780564438</p>
+                    </div>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <h4>Home</h4>
+                        <p>Kigali, Rwanda</p>
+                    </div>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>dushimediane12@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon">
+                        <i class="fa fa-globe-europe"></i>
+                        <h4>Website</h4>
+                        <p>https://github.com/dushimiman</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+    <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname" style="color: cornsilk;">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="email" style="color: cornsilk;">Email</label>
+        <input type="text" id="email" name="Email" placeholder="Your Email..">
+
+    
+        <label for="country" style="color: cornsilk;">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Rwanda</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject" style="color: cornsilk;">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+      </div>
         </div>
     </section>
 </body>
