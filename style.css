@@ -433,3 +433,40 @@ position: relative;
 .contact-form .form-item textarea.form-control{
   height: 140px;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgb(146, 141, 141);
+  transition: 0.3s;
+  width: 30%;
+  height: 70vh;
+  background: white;
+  margin: 1.5rem;
+}
+.card p{
+  color: black;
+  padding: 1rem;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container{
+  padding: 2px 16px;
+}
+.blog-container{
+  display: flex;
+  height: 80vh;
+  padding-top: 2rem;
+  background-color: black;
+}
+.card img{
+  width: 30%;
+  height: 40vh;
+}
+.card-button{
+  padding: 10px;
+  width: 30%;
+  color: cornsilk;
+  background: #10654E;
+  margin-top: 1rem;
+  cursor: pointer;
+}
